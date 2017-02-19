@@ -1,18 +1,50 @@
-<html lang="en">
-    <head>
-        <title>
-            Form
-        </title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1 style="text-align: center; padding-top: 50px; font-family: sans-serif;"><img src="Ietlogo.png" alt="iet lucknow" style="width: 100px; height: 100px; float: left;" />STUDENT'S REGISTRATION FORM</h1>
-            <form style="padding-top: 50px;">
-                <div class="form-group row">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Wizard - a JavaScript jQuery Step Wizard plugin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Include SmartWizard CSS -->
+    <link href="../css/smart_wizard.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Optional SmartWizard theme -->
+    <link href="../css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        
+        <form class="form-inline">          
+            
+            <label>External Buttons:</label>
+            <div class="btn-group navbar-btn" role="group">
+                <button class="btn btn-default" id="prev-btn" type="button">Go Previous</button>
+                <button class="btn btn-default" id="next-btn" type="button">Go Next</button>
+                <button class="btn btn-danger" id="reset-btn" type="button">Reset Wizard</button>
+            </div>
+        </form>
+
+        <br />
+        
+        <!-- SmartWizard html -->
+        <div id="smartwizard">
+            <ul>
+                <li><a href="#step-1">Step 1<br /><small>This is tab's description</small></a></li>
+                <li><a href="#step-2">Step 2<br /><small>This is tab's description</small></a></li>
+                <li><a href="#step-3">Step 3<br /><small>This is tab's description</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>This is tab's description</small></a></li>
+            </ul>
+            
+            <div>
+                <div id="step-1" class="">
+                     <h2>Your Email Address</h2>
+                    <div id="form-step-0" role="form" data-toggle="validator">
+                        <div class="form-group row">
                 <label for="example-color-input" class="offset-md-6 col-md-2 col-form-label">Date of Registration</label>
                 <div class="col-md-4">
                     <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
@@ -224,90 +256,107 @@
                     </select>
                 </div>
                 </div>
-                <hr>
-
-                <!--<div class="form-group">
-                    <label for="exampleSelect1">Example select</label>
-                    <select class="form-control" id="exampleSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-sm-1 col-form-label">Text</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                </div>
-                <label for="example-search-input" class="col-sm-1 col-form-label">Search</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-email-input" class="col-sm-1 col-form-label">Email</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-                </div>
-                <label for="example-url-input" class="col-sm-1 col-form-label">URL</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-tel-input" class="col-sm-1 col-form-label">Telephone</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-                </div>
-                <label for="example-password-input" class="col-sm-1 col-form-label">Password</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="password" value="hunter2" id="example-password-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-number-input" class="col-sm-1 col-form-label">Number</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="number" value="42" id="example-number-input">
-                </div>
-                <label for="example-datetime-local-input" class="col-sm-1 col-form-label">Date and time</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-date-input" class="col-sm-1 col-form-label">Date</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                </div>
-                <label for="example-month-input" class="col-sm-1 col-form-label">Month</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="month" value="2011-08" id="example-month-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-week-input" class="col-sm-1 col-form-label">Week</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="week" value="2011-W33" id="example-week-input">
-                </div>
-                <label for="example-time-input" class="col-sm-1 col-form-label">Time</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="time" value="13:45:00" id="example-time-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-color-input" class="col-sm-1 col-form-label">Color</label>
-                <div class="col-sm-5">
-                    <input class="form-control" type="color" value="#563d7c" id="example-color-input">
-                </div>
-                </div>-->
                 <div class="form-group row">
                 <div class="offset-sm-2 col-sm-10">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
                 </div>
-            </form>
+                <hr>
+                    </div>
+                </div>
+                <div id="step-2" class="">
+                    <h2>Step 2 Content</h2>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+                </div>
+                <div id="step-3" class="">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div id="step-4" class="">
+                    <h2>Step 4 Content</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">My Details</div>
+                        <table class="table">
+                            <tbody>
+                                <tr> <th>Name:</th> <td>Tim Smith</td> </tr>
+                                <tr> <th>Email:</th> <td>example@example.com</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+        
+        
+    </div>
+    
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include SmartWizard JavaScript source -->
+    <script type="text/javascript" src="../js/jquery.smartWizard.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            // Step show event 
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+               //alert("You are on step "+stepNumber+" now");
+               if(stepPosition === 'first'){
+                   $("#prev-btn").addClass('disabled');
+               }else if(stepPosition === 'final'){
+                   $("#next-btn").addClass('disabled');
+               }else{
+                   $("#prev-btn").removeClass('disabled');
+                   $("#next-btn").removeClass('disabled');
+               }
+            });
+            
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                                             .addClass('btn btn-info')
+                                             .on('click', function(){ alert('Finish Clicked'); });
+            var btnCancel = $('<button></button>').text('Cancel')
+                                             .addClass('btn btn-danger')
+                                             .on('click', function(){ $('#smartwizard').smartWizard("reset"); });                         
+            
+            
+            // Smart Wizard
+            $('#smartwizard').smartWizard({ 
+                    selected: 0, 
+                    theme: 'arrows',
+                    transitionEffect:'fade',
+                    toolbarSettings: {toolbarPosition: 'both',
+                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                    }
+                 });
+                                         
+            
+            // External Button Events
+            $("#reset-btn").on("click", function() {
+                // Reset wizard
+                $('#smartwizard').smartWizard("reset");
+                return true;
+            });
+            
+            $("#prev-btn").on("click", function() {
+                // Navigate previous
+                $('#smartwizard').smartWizard("prev");
+                return true;
+            });
+            
+            $("#next-btn").on("click", function() {
+                // Navigate next
+                $('#smartwizard').smartWizard("next");
+                return true;
+            });
+            
+            
+        });   
+    </script>  
+</body>
 </html>
