@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Optional Bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <!-- Include SmartWizard CSS -->
     <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
@@ -42,7 +43,7 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Student's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishal Polley" id="example-text-input" required="">
+                    <input class="form-control" type="text" placeholder="Name" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 <label for="exampleSelect1" class="col-md-1 col-form-label">Sex</label>
@@ -56,54 +57,97 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Student's Name (In Hindi)</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishal Polley" id="example-text-input">
+                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" placeholder="नाम (
+हिंदी में)" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">DEGREE SOUGHT</label>
                 <div class="col-md-2">
-                    <input class="form-control" type="text" value="B.TECH" id="example-text-input">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>B. TECH</option>
+                    <option>M. TECH</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>PhD</option>
+                    </select>
                 </div>
                 <label for="example-search-input" class="col-md-2 col-form-label">COURSE/ BRANCH</label>
                 <div class="col-md-2">
-                    <input class="form-control" type="text" value="CSE" id="example-text-input">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>Civil</option>
+                    <option>EE</option>
+                    <option>ME</option>
+                    <option>EC</option>
+                    <option>EI</option>
+                    <option>Chemical</option>
+                    </select>
                 </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">SEMESTER</label>
+                <label for="example-search-input" class="col-md-1 col-form-label">SEMESTER</label>
                 <div class="col-md-2">
-                    <input class="form-control" type="number" value="4" min="1" max="8" id="example-number-input">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    </select>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-color-input" class="col-md-2 col-form-label">University Roll No.</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="number" value="1505213053" min="1000000000" max="9999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="15052xxxxx" min="1000000000" max="9999999999" id="example-number-input" required>
                     (Except First Semester)
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-date-input" class="col-md-2 col-form-label">Date of Birth</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="date" value="1996-09-29" id="example-date-input">
+                    <input class="form-control" type="date" placeholder="yyyy-mm-dd" id="example-date-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Mailing Address</label>
-                <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
+                <label for="example-text-input" class="col-md-2 col-form-label">Street Address</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Street Address" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">State</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">City</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-1 col-form-label">Pin</label>
                 <div class="col-md-2">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label">Phone</label>
                 <div class="col-md-3">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label">E-mail</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="email" value="vishalpolley290996@gmail.com" id="example-email-input">
+                    <input class="form-control" type="email" placeholder="email@abc.com" id="example-email-input">
                 </div>
                 </div>
                 <hr>
@@ -114,84 +158,116 @@
                      <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Father's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishwajeet Polley" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Father's Name" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="Business" id="example-text-input">
+                    <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    <option>Farmer</option>
+                    </select>
                 </div>
                 <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="number" value="10000" min="10000" max="" id="example-number-input">
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Under 2 Lakhs</option>
+                    <option>2 Lakhs - 5 Lakhs</option>
+                    <option>5 Lakhs - 10 Lakhs</option>
+                    <option>Above 10 Lakhs</option>
+                    </select>
                 </div>
                 </div>
+                <hr>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Mother's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Shyamali Polley" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Mother's Name" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="House Wife" id="example-text-input">
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>House Wife</option>
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    </select>
                 </div>
                 <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="number" value="" min="0" max="" id="example-number-input">
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Nil</option>
+                    <option>Under 2 Lakhs</option>
+                    <option>2 Lakhs - 5 Lakhs</option>
+                    <option>5 Lakhs - 10 Lakhs</option>
+                    <option>Above 10 Lakhs</option>
+                    </select>
                 </div>
                 </div>
+                <hr>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Guardian's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Aurobindo Saha" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Guardian's Name" id="example-text-input">
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="" id="example-text-input">
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option></option>
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    </select>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Father's/ Guardian's Address</label>
                 <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
                 <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="9936899500" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
+                <hr>
                  <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Aurobindo Saha" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Local Guardian's Name, Relationship" id="example-text-input">
                     (If Any) alongwith relationship
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Address</label>
                 <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input">
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
                 <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
                 <hr>
