@@ -27,13 +27,19 @@
                 <li><a href="#step-1">Step 1<br /><small>Student Details</small></a></li>
                 <li><a href="#step-2">Step 2<br /><small>Parents Details</small></a></li>
                 <li><a href="#step-3">Step 3<br /><small>Other Details</small></a></li>
-                <li><a href="#step-4">Step 4<br /><small>Confirmation</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>Hostel Details</small></a></li>
+                <li><a href="#step-5">Step 5<br /><small>Confirmation</small></a></li>
             </ul>
             
             <div>
                 <div id="step-1">
                      <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Student Details</h2>
+                     <div class="panel panel-default" style="padding: 20px;">
                    <div id="form-step-0">
+                   </br>
+                   <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                <hr>
+                </br>
                         <!--<div class="form-group row">
                 <label for="example-color-input" class="offset-md-6 col-md-2 col-form-label">Date of Registration</label>
                 <div class="col-md-4">
@@ -41,12 +47,12 @@
                 </div>
                 </div>-->
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Name</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Name" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
-                <label for="exampleSelect1" class="col-md-1 col-form-label">Sex</label>
+                <label for="exampleSelect1" class="col-md-1 col-form-label" style="text-align: center;">Sex<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
                     <select class="form-control" id="exampleSelect1">
                     <option>Male</option>
@@ -54,16 +60,18 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Name (In Hindi)</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name (In Hindi)<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
                     <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" placeholder="नाम (
 हिंदी में)" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">DEGREE SOUGHT</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">DEGREE SOUGHT<span style="color: red;">*</span></label>
                 <div class="col-md-2">
                     <select class="form-control" id="exampleSelect1">
                     <option>B. TECH</option>
@@ -73,7 +81,7 @@
                     <option>PhD</option>
                     </select>
                 </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">COURSE/ BRANCH</label>
+                <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">COURSE/ BRANCH<span style="color: red;">*</span></label>
                 <div class="col-md-2">
                     <select class="form-control" id="exampleSelect1">
                     <option>CSE</option>
@@ -86,7 +94,7 @@
                     <option>Chemical</option>
                     </select>
                 </div>
-                <label for="example-search-input" class="col-md-1 col-form-label">SEMESTER</label>
+                <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">SEMESTER<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
                     <select class="form-control" id="exampleSelect1">
                     <option>1</option>
@@ -100,70 +108,85 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-color-input" class="col-md-2 col-form-label">University Roll No.</label>
+                <label for="example-color-input" class="col-md-2 col-form-label" style="text-align: center;">University Roll No.<span style="color: red;">*</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="number" placeholder="15052xxxxx" min="1000000000" max="9999999999" id="example-number-input" required>
                     (Except First Semester)
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-date-input" class="col-md-2 col-form-label">Date of Birth</label>
+                <label for="example-date-input" class="col-md-2 col-form-label" style="text-align: center;">Date of Birth<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="date" placeholder="yyyy-mm-dd" id="example-date-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Street Address</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Street Address<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
                     <input class="form-control" type="text" placeholder="Street Address" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">State</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">State<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
                     <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">City</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">City<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
                     <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-1 col-form-label">Pin</label>
+                <label for="example-text-input" class="col-md-1 col-form-label" style="text-align: center;">Pin<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
                     <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
-                <label for="example-search-input" class="col-md-1 col-form-label">Phone</label>
+                <label for="example-search-input" class="col-md-1 col-form-label" style="text-align: center;">Phone<span style="color: red;">  *</span></label>
                 <div class="col-md-3">
                     <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
-                <label for="example-search-input" class="col-md-1 col-form-label">E-mail</label>
+                <label for="example-search-input" class="col-md-1 col-form-label" style="text-align: center;">E-mail<span style="color: red;">  *</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="email" placeholder="email@abc.com" id="example-email-input">
                 </div>
                 </div>
+                </div>
+                </div>
+                </br>
                 <hr>
-                    </div>
+                </br>
                 </div>
                 <div id="step-2" class="">
                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Parents Details</h2>
+                    <div class="panel panel-default" style="padding: 20px;">
+                    </br>
+                     <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                <hr>
+                </br>
                      <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Father's Name</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Father's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Father's Name" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession<span style="color: red;">*</span></label>
                     <div class="col-md-3">
                     <select class="form-control" id="exampleSelect1">
                     <option>Business</option>
@@ -172,7 +195,7 @@
                     <option>Farmer</option>
                     </select>
                 </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
+                <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">Annual Income<span style="color: red;">*</span></label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect1">
                     <option>Under 2 Lakhs</option>
@@ -182,16 +205,19 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <hr>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Mother's Name</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Mother's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Mother's Name" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession<span style="color: red;">*</span></label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect1">
                     <option>House Wife</option>
@@ -200,7 +226,7 @@
                     <option>Government Employee</option>
                     </select>
                 </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
+                <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">Annual Income</label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect1">
                     <option>Nil</option>
@@ -211,15 +237,18 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <hr>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Guardian's Name</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Guardian's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Guardian's Name" id="example-text-input">
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession</label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect1">
                     <option></option>
@@ -229,66 +258,81 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Father's/ Guardian's Address</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Father's/ Guardian's Address<span style="color: red;">*</span></label>
                 <div class="col-md-10">
                     <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
+                <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Pin<span style="color: red;">*</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
-                <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
+                <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Phone<span style="color: red;">*</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="number" placeholder="9936899500" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
+                </br>
                 <hr>
+                </br>
                  <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Name</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Local Guardian's Name</label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Local Guardian's Name, Relationship" id="example-text-input">
                     (If Any) alongwith relationship
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Address</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Local Guardian's Address</label>
                 <div class="col-md-10">
                     <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input">
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
+                <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Pin</label>
                 <div class="col-md-4">
                     <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
-                <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
+                <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Phone</label>
                 <div class="col-md-4">
                     <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
+                </div>
+                </br>
                 <hr>
+                </br>
                 </div>
                 <div id="step-3" class="">
                  <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Other Details</h2>
+                 <div class="panel panel-default" style="padding: 20px;">
+                 </br>
+                 <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                <hr>
+                </br>
                    <div class="form-group row">
-                <label for="exampleSelect2" class="col-md-4 col-form-label">If student belongs to minority community</label>
+                <label for="exampleSelect2" class="col-md-4 col-form-label">If student belongs to minority community<span style="color: red;">*</span></label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect2">
                     <option>Yes</option>
                     <option>No</option>
                     </select>
                 </div>
-                <label for="example-text-input" class="col-md-1 col-form-label">Detail</label>
+                <label for="example-text-input" class="col-md-1 col-form-label" style="text-align: center;">Detail</label>
                 <div class="col-md-4">
                     <input class="form-control" type="text" value="General" id="example-text-input">
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="exampleSelect2" class="col-md-4 col-form-label">Whether belong to Rural or Urban area</label>
+                <label for="exampleSelect2" class="col-md-4 col-form-label">Whether belong to Rural or Urban area<span style="color: red;">*</span></label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect2">
                     <option>Urban</option>
@@ -296,18 +340,20 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Cast</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Cast<span style="color: red;">*</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="text" value="General" id="example-text-input">
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Category</label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Category<span style="color: red;">*</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="text" value="General" id="example-text-input">
                 </div>
-                <label for="exampleSelect2" class="col-md-2 col-form-label">Sub-Category</label>
+                <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Sub-Category</label>
                 <div class="col-md-4">
                     <select class="form-control" id="exampleSelect2">
                     <option>OBC (Creamy Layer)</option>
@@ -317,18 +363,89 @@
                     </select>
                 </div>
                 </div>
+                </br>
                 <div class="form-group row">
-                <label for="exampleSelect2" class="col-md-2 col-form-label">Whether admitted in</label>
+                <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Whether admitted in</label>
                 <div class="col-md-4">
                     <select class="form-control" id="exampleSelect2">
+                    <option>None of these</option>
                     <option>NRI Seat</option>
                     <option>Govt. Sponsered Seat</option>
-                    <option>None of these</option>
                     </select>
                 </div>
                 </div>
+                </br>
+                <hr>
+                </br>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Blood Group</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="exampleSelect2">
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    </select>
+                </div>
+                </div>
+                </br>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Hoobies</label>
+                <div class="col-md-8">
+                    <input class="form-control" type="text" value="General" id="example-text-input">
+                </div>
+                </div>
+                </div>
+                </br>
+                <hr>
+                </br>
                 </div>
                 <div id="step-4" class="">
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Hostel Request</h2>
+                    <div class="panel panel-default" style="padding: 20px;">
+                    </br>
+                    <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                    <hr>
+                    </br>
+                         <div class="form-group row">
+                            <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Hostel Request<span style="color: red;">*</span></label>
+                            <div class="col-md-3">
+                                <select class="form-control" id="exampleSelect2">
+                                <option>Yes</option>
+                                <option>No</option>
+                                </select>
+                            </div>
+                        </div> 
+                        </br>
+                        <div class="form-group row">
+                            <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Hostel Name<span style="color: red;">*</span></label>
+                            <div class="col-md-3">
+                                <select class="form-control" id="exampleSelect2">
+                                <option>A-Block</option>
+                                <option>B-Block</option>
+                                <option>C-Block</option>
+                                <option>D-Block</option>
+                                <option>E-Block</option>
+                                <option>F-Block</option>
+                                </select>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="form-group row">
+                            <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Room No. Request</label>
+                            <div class="col-md-3">
+                                <input class="form-control" type="text" placeholder="123" id="example-text-input">
+                            </div>
+                        </div> 
+                        </div>
+                        </br>
+                        <hr>
+                        </br> 
+                </div>
+                <div id="step-5" class="">
                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Confirmation</h2>
                     <div class="panel panel-default" style="padding: 20px;">
                         <h3 style="text-align: center;">Decleration</h3>
