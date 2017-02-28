@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Smart Wizard - a JavaScript jQuery Step Wizard plugin</title>
+    <title>Registration Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Optional Bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <!-- Include SmartWizard CSS -->
     <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
@@ -18,66 +19,35 @@
 </head>
 <body>
     <div class="container">
-        
-        <form class="form-inline">          
-            
-            <label>External Buttons:</label>
-            <div class="btn-group navbar-btn" role="group">
-                <button class="btn btn-default" id="prev-btn" type="button">Go Previous</button>
-                <button class="btn btn-default" id="next-btn" type="button">Go Next</button>
-                <button class="btn btn-danger" id="reset-btn" type="button">Reset Wizard</button>
-            </div>
-        </form>
-
-        <br />
-        
+     <div style="display: inline;"><img src="Ietlogo.png" style="float: left;" /><h2 style="text-align: center; padding-top: 10px; padding-bottom: 50px;font-size: 3em; font-family:serif;"> Registration Form</h2></div>
+        <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
         <!-- SmartWizard html -->
         <div id="smartwizard">
             <ul>
-                <li><a href="#step-1">Step 1<br /><small>This is tab's description</small></a></li>
-                <li><a href="#step-2">Step 2<br /><small>This is tab's description</small></a></li>
-                <li><a href="#step-3">Step 3<br /><small>This is tab's description</small></a></li>
-                <li><a href="#step-4">Step 4<br /><small>This is tab's description</small></a></li>
+                <li><a href="#step-1">Step 1<br /><small>Student Details</small></a></li>
+                <li><a href="#step-2">Step 2<br /><small>Parents Details</small></a></li>
+                <li><a href="#step-3">Step 3<br /><small>Other Details</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>Confirmation</small></a></li>
             </ul>
             
             <div>
-                <div id="step-1" class="">
-                     <h2>Your Email Address</h2>
-                    <div id="form-step-0" role="form" data-toggle="validator">
-                        <div class="form-group row">
+                <div id="step-1">
+                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Student Details</h2>
+                   <div id="form-step-0">
+                        <!--<div class="form-group row">
                 <label for="example-color-input" class="offset-md-6 col-md-2 col-form-label">Date of Registration</label>
                 <div class="col-md-4">
                     <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                 </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">DEGREE SOUGHT</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="text" value="B.TECH" id="example-text-input">
-                </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">COURSE/ BRANCH</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="text" value="CSE" id="example-text-input">
-                </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">SEMESTER</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="number" value="4" min="1" max="8" id="example-number-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-color-input" class="col-md-2 col-form-label">University Roll No.</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="number" value="1505213053" min="1000000000" max="9999999999" id="example-number-input">
-                    (Except First Semester)
-                </div>
-                </div>
+                </div>-->
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Student's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishal Polley" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Name" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 <label for="exampleSelect1" class="col-md-1 col-form-label">Sex</label>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <select class="form-control" id="exampleSelect1">
                     <option>Male</option>
                     <option>Female</option>
@@ -87,123 +57,224 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Student's Name (In Hindi)</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishal Polley" id="example-text-input">
+                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" placeholder="नाम (
+हिंदी में)" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">DEGREE SOUGHT</label>
+                <div class="col-md-2">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>B. TECH</option>
+                    <option>M. TECH</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>PhD</option>
+                    </select>
+                </div>
+                <label for="example-search-input" class="col-md-2 col-form-label">COURSE/ BRANCH</label>
+                <div class="col-md-2">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>Civil</option>
+                    <option>EE</option>
+                    <option>ME</option>
+                    <option>EC</option>
+                    <option>EI</option>
+                    <option>Chemical</option>
+                    </select>
+                </div>
+                <label for="example-search-input" class="col-md-1 col-form-label">SEMESTER</label>
+                <div class="col-md-2">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-color-input" class="col-md-2 col-form-label">University Roll No.</label>
+                <div class="col-md-5">
+                    <input class="form-control" type="number" placeholder="15052xxxxx" min="1000000000" max="9999999999" id="example-number-input" required>
+                    (Except First Semester)
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-date-input" class="col-md-2 col-form-label">Date of Birth</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="date" value="1996-09-29" id="example-date-input">
-                </div>
-                </div>
-                <hr>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Father's Name</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="Vishwajeet Polley" id="example-text-input">
+                    <input class="form-control" type="date" placeholder="yyyy-mm-dd" id="example-date-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="Business" id="example-text-input">
-                </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="number" value="10000" min="10000" max="" id="example-number-input">
+                <label for="example-text-input" class="col-md-2 col-form-label">Street Address</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Street Address" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Mother's Name</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="Shyamali Polley" id="example-text-input">
+                <label for="example-text-input" class="col-md-2 col-form-label">State</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="House Wife" id="example-text-input">
-                </div>
-                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
-                <div class="col-md-2">
-                    <input class="form-control" type="number" value="" min="0" max="" id="example-number-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Guardian's Name</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="Aurobindo Saha" id="example-text-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
-                <div class="col-md-5">
-                    <input class="form-control" type="text" value="" id="example-text-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Father's/ Guardian's Address</label>
-                <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
-                </div>
-                </div>
-                <div class="form-group row">
-                <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
-                <div class="col-md-4">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
-                </div>
-                <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
-                <div class="col-md-4">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
-                </div>
-                </div>
-                <hr>
-                <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label">Student's Mailing Address</label>
-                <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
+                <label for="example-text-input" class="col-md-2 col-form-label">City</label>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-1 col-form-label">Pin</label>
                 <div class="col-md-2">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label">Phone</label>
                 <div class="col-md-3">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label">E-mail</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="email" value="vishalpolley290996@gmail.com" id="example-email-input">
+                    <input class="form-control" type="email" placeholder="email@abc.com" id="example-email-input">
+                </div>
+                </div>
+                <hr>
+                    </div>
+                </div>
+                <div id="step-2" class="">
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Parents Details</h2>
+                     <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Father's Name</label>
+                <div class="col-md-5">
+                    <input class="form-control" type="text" placeholder="Father's Name" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                    <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    <option>Farmer</option>
+                    </select>
+                </div>
+                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Under 2 Lakhs</option>
+                    <option>2 Lakhs - 5 Lakhs</option>
+                    <option>5 Lakhs - 10 Lakhs</option>
+                    <option>Above 10 Lakhs</option>
+                    </select>
                 </div>
                 </div>
                 <hr>
                 <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Mother's Name</label>
+                <div class="col-md-5">
+                    <input class="form-control" type="text" placeholder="Mother's Name" id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>House Wife</option>
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    </select>
+                </div>
+                <label for="example-search-input" class="col-md-2 col-form-label">Annual Income</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Nil</option>
+                    <option>Under 2 Lakhs</option>
+                    <option>2 Lakhs - 5 Lakhs</option>
+                    <option>5 Lakhs - 10 Lakhs</option>
+                    <option>Above 10 Lakhs</option>
+                    </select>
+                </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Guardian's Name</label>
+                <div class="col-md-5">
+                    <input class="form-control" type="text" placeholder="Guardian's Name" id="example-text-input">
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Profession</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="exampleSelect1">
+                    <option></option>
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Government Employee</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Father's/ Guardian's Address</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
+                </div>
+                <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="number" placeholder="9936899500" min="0" max="999999999999" id="example-number-input">
+                </div>
+                </div>
+                <hr>
+                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Name</label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" value="Aurobindo Saha" id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Local Guardian's Name, Relationship" id="example-text-input">
                     (If Any) alongwith relationship
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label">Local Guardian's Address</label>
                 <div class="col-md-10">
-                    <input class="form-control" type="text" value="642, Budhnagar, Hussainganj, Sitapur." id="example-text-input">
+                    <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input">
                 </div>
                 </div>
                 <div class="form-group row">
                 <label for="example-number-input" class="col-md-2 col-form-label">Pin</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="261125" min="1" max="999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="123456" min="1" max="999999" id="example-number-input">
                 </div>
                 <label for="example-number-input" class="col-md-2 col-form-label">Phone</label>
                 <div class="col-md-4">
-                    <input class="form-control" type="number" value="9936899500" min="0" max="999999999999" id="example-number-input">
+                    <input class="form-control" type="number" placeholder="9876543210" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
                 <hr>
-                <div class="form-group row">
+                </div>
+                <div id="step-3" class="">
+                 <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Other Details</h2>
+                   <div class="form-group row">
                 <label for="exampleSelect2" class="col-md-4 col-form-label">If student belongs to minority community</label>
                 <div class="col-md-3">
                     <select class="form-control" id="exampleSelect2">
@@ -256,46 +327,30 @@
                     </select>
                 </div>
                 </div>
-                <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                </div>
-                <hr>
-                    </div>
-                </div>
-                <div id="step-2" class="">
-                    <h2>Step 2 Content</h2>
-                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
-                </div>
-                <div id="step-3" class="">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
                 <div id="step-4" class="">
-                    <h2>Step 4 Content</h2>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">My Details</div>
-                        <table class="table">
-                            <tbody>
-                                <tr> <th>Name:</th> <td>Tim Smith</td> </tr>
-                                <tr> <th>Email:</th> <td>example@example.com</td> </tr>
-                            </tbody>
-                        </table>
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Confirmation</h2>
+                    <div class="panel panel-default" style="padding: 20px;">
+                        <h3 style="text-align: center;">Decleration</h3>
+                        I undertake that the information submitted is true to the best of my knowledge and belief. I shall bear
+the consequences if any of them are found to be wrong.
+                        <h3 style="text-align: center; padding-top: 20px;">Undertaking by the Student</h3>
+                         I will attend all the classes from the opening day of the Institute and I will be regular
+and punctual to all the classes i.e (Theory/Practical) and i am aware that if I don’t secure attendance more than
+75% I shall be detained and not allowed to appear for the Term End Examination.
                     </div>
                 </div>
             </div>
         </div>
         
-        
+        </form>
     </div>
     
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include jQuery Validator plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
 
     <!-- Include SmartWizard JavaScript source -->
     <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
@@ -314,12 +369,33 @@
                    $("#prev-btn").removeClass('disabled');
                    $("#next-btn").removeClass('disabled');
                }
+               if(stepNumber == 3){ 
+                    $('.btn-finish').removeClass('disabled');  
+                }else{
+                    $('.btn-finish').addClass('disabled');
+                }
             });
             
             // Toolbar extra buttons
             var btnFinish = $('<button></button>').text('Finish')
                                              .addClass('btn btn-info')
-                                             .on('click', function(){ alert('Finish Clicked'); });
+                                             .on('click', function(){ 
+                                                    if( !$(this).hasClass('disabled')){ 
+                                                        var elmForm = $("#myForm");
+                                                        if(elmForm){
+                                                            elmForm.validator('validate'); 
+                                                            var elmErr = elmForm.find('.has-error');
+                                                            if(elmErr && elmErr.length > 0){
+                                                                alert('Oops we still have error in the form');
+                                                                return false;    
+                                                            }else{
+                                                                alert('Great! we are ready to submit form');
+                                                                elmForm.submit();
+                                                                return false;
+                                                            }
+                                                        }
+                                                    }
+                                                });
             var btnCancel = $('<button></button>').text('Cancel')
                                              .addClass('btn btn-danger')
                                              .on('click', function(){ $('#smartwizard').smartWizard("reset"); });                         
@@ -357,6 +433,78 @@
             
             
         });   
-    </script>  
+    </script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                                             .addClass('btn btn-info')
+                                             .on('click', function(){ 
+                                                    if( !$(this).hasClass('disabled')){ 
+                                                        var elmForm = $("#myForm");
+                                                        if(elmForm){
+                                                            elmForm.validator('validate'); 
+                                                            var elmErr = elmForm.find('.has-error');
+                                                            if(elmErr && elmErr.length > 0){
+                                                                alert('Oops we still have error in the form');
+                                                                return false;    
+                                                            }else{
+                                                                alert('Great! we are ready to submit form');
+                                                                elmForm.submit();
+                                                                return false;
+                                                            }
+                                                        }
+                                                    }
+                                                });
+            var btnCancel = $('<button></button>').text('Cancel')
+                                             .addClass('btn btn-danger')
+                                             .on('click', function(){ 
+                                                    $('#smartwizard').smartWizard("reset"); 
+                                                    $('#myForm').find("input, textarea").val(""); 
+                                                });                     
+
+            // Smart Wizard
+            $('#smartwizard').smartWizard({ 
+                    selected: 0, 
+                    theme: 'arrows',
+                    transitionEffect:'fade',
+                    toolbarSettings: {toolbarPosition: 'bottom',
+                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                    },
+                    anchorSettings: {
+                                markDoneStep: true, // add done css
+                                markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+                                removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                            }
+                 });
+            
+            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+                var elmForm = $("#form-step-" + stepNumber);
+                // stepDirection === 'forward' :- this condition allows to do the form validation 
+                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                if(stepDirection === 'forward' && elmForm){
+                    elmForm.validator('validate'); 
+                    var elmErr = elmForm.children('.has-error');
+                    if(elmErr && elmErr.length > 0){
+                        // Form validation failed
+                        return false;    
+                    }
+                }
+                return true;
+            });
+            
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                if(stepNumber == 3){ 
+                    $('.btn-finish').removeClass('disabled');  
+                }else{
+                    $('.btn-finish').addClass('disabled');
+                }
+            });                              
+            
+        });   
+    </script>-->
 </body>
 </html>
