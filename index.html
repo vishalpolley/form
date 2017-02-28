@@ -13,13 +13,15 @@
 
     <!-- Include SmartWizard CSS -->
     <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
     
     <!-- Optional SmartWizard theme -->
     <link href="css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="container">
-     <div style="display: inline;"><img src="Ietlogo.png" style="float: left;" /><h2 style="text-align: center; padding-top: 10px; padding-bottom: 50px;font-size: 3em; font-family:serif;"> Registration Form</h2></div>
+     <div style="display: inline;"><img src="Ietlogo.png" style="float: left;" /><h2 style="text-align: center; padding-top: 10px; padding-bottom: 50px;font-size: 3em; font-family:serif;font-size: 3.5em;"> Registration Form</h2></div>
         <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
         <!-- SmartWizard html -->
         <div id="smartwizard">
@@ -33,13 +35,17 @@
             
             <div>
                 <div id="step-1">
-                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Student Details</h2>
+                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Student Details</h2>
                      <div class="panel panel-default" style="padding: 20px;">
                    <div id="form-step-0">
-                   <br />
-                   <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+
+                   
+                   <h5 style="margin-left: 20px;"><span style="color: red; font-size: 1.5em;">  *</span>-Required Fields</h5>
                 <hr>
-                <br />
+                <br/>
+
+                  
+
                         <!--<div class="form-group row">
                 <label for="example-color-input" class="offset-md-6 col-md-2 col-form-label">Date of Registration</label>
                 <div class="col-md-4">
@@ -58,9 +64,14 @@
                     <option>Male</option>
                     <option>Female</option>
                     </select>
+                </div>     
                 </div>
-                </div>
-                <b /r>
+
+                <br/>
+
+           
+                <br/>
+
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name (In Hindi)<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
@@ -69,7 +80,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                <br />
+<br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">DEGREE SOUGHT<span style="color: red;">*</span></label>
                 <div class="col-md-2">
@@ -126,8 +137,7 @@
                 </div>
                 </div>
                 <br/>
-                 <div class="image"></div>
-                 <div class="sign"></div>
+
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Street Address<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
@@ -135,7 +145,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">State<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
@@ -143,7 +153,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">City<span style="color: red;">  *</span></label>
                 <div class="col-md-6">
@@ -151,7 +161,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-1 col-form-label" style="text-align: center;">Pin<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
@@ -168,17 +178,14 @@
                 </div>
                 </div>
                 </div>
-                </br>
-                <hr>
-                </br>
                 </div>
                 <div id="step-2" class="">
-                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Parents Details</h2>
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Parents Details</h2>
                     <div class="panel panel-default" style="padding: 20px;">
-                    </br>
-                     <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                    <br/>
+                     <h5 style="margin-left: 20px;"><span style="color: red;font-size: 1.5em;">  *</span>-Required Fields</h5>
                 <hr>
-                </br>
+                <br/>
                      <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Father's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
@@ -186,7 +193,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession<span style="color: red;">*</span></label>
                     <div class="col-md-3">
@@ -207,9 +214,9 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <hr>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Mother's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
@@ -217,7 +224,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession<span style="color: red;">*</span></label>
                 <div class="col-md-3">
@@ -239,16 +246,16 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <hr>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Guardian's Name<span style="color: red;">*</span></label>
                 <div class="col-md-5">
                     <input class="form-control" type="text" placeholder="Guardian's Name" id="example-text-input">
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Profession</label>
                 <div class="col-md-3">
@@ -260,7 +267,7 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Father's/ Guardian's Address<span style="color: red;">*</span></label>
                 <div class="col-md-10">
@@ -268,7 +275,7 @@
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Pin<span style="color: red;">*</span></label>
                 <div class="col-md-4">
@@ -279,9 +286,9 @@
                     <input class="form-control" type="number" placeholder="9936899500" min="0" max="999999999999" id="example-number-input">
                 </div>
                 </div>
-                </br>
+                <br/>
                 <hr>
-                </br>
+                <br/>
                  <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Local Guardian's Name</label>
                 <div class="col-md-5">
@@ -289,14 +296,14 @@
                     (If Any) alongwith relationship
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Local Guardian's Address</label>
                 <div class="col-md-10">
                     <input class="form-control" type="text" placeholder="Street Address, City, State." id="example-text-input">
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-number-input" class="col-md-2 col-form-label" style="text-align: center;">Pin</label>
                 <div class="col-md-4">
@@ -308,17 +315,14 @@
                 </div>
                 </div>
                 </div>
-                </br>
-                <hr>
-                </br>
                 </div>
                 <div id="step-3" class="">
-                 <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Other Details</h2>
+                 <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Other Details</h2>
                  <div class="panel panel-default" style="padding: 20px;">
-                 </br>
-                 <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                 <br/>
+                 <h5 style="margin-left: 20px;"><span style="color: red;font-size: 1.5em;">  *</span>-Required Fields</h5>
                 <hr>
-                </br>
+                <br/>
                    <div class="form-group row">
                 <label for="exampleSelect2" class="col-md-4 col-form-label">If student belongs to minority community<span style="color: red;">*</span></label>
                 <div class="col-md-3">
@@ -332,7 +336,7 @@
                     <input class="form-control" type="text" value="General" id="example-text-input">
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="exampleSelect2" class="col-md-4 col-form-label">Whether belong to Rural or Urban area<span style="color: red;">*</span></label>
                 <div class="col-md-3">
@@ -342,14 +346,14 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Cast<span style="color: red;">*</span></label>
                 <div class="col-md-4">
                     <input class="form-control" type="text" value="General" id="example-text-input">
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Category<span style="color: red;">*</span></label>
                 <div class="col-md-4">
@@ -365,7 +369,7 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Whether admitted in</label>
                 <div class="col-md-4">
@@ -376,9 +380,9 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <hr>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Blood Group</label>
                 <div class="col-md-4">
@@ -393,7 +397,7 @@
                     </select>
                 </div>
                 </div>
-                </br>
+                <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Hoobies</label>
                 <div class="col-md-8">
@@ -401,17 +405,14 @@
                 </div>
                 </div>
                 </div>
-                </br>
-                <hr>
-                </br>
                 </div>
                 <div id="step-4" class="">
-                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Hostel Request</h2>
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Hostel Request</h2>
                     <div class="panel panel-default" style="padding: 20px;">
-                    </br>
-                    <h5 style="margin-left: 20px;"><span style="color: red;">  *</span>-Required Fields</h5>
+                    <br/>
+                    <h5 style="margin-left: 20px;"><span style="color: red;font-size: 1.5em;">  *</span>-Required Fields</h5>
                     <hr>
-                    </br>
+                    <br/>
                          <div class="form-group row">
                             <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Hostel Request<span style="color: red;">*</span></label>
                             <div class="col-md-3">
@@ -421,7 +422,7 @@
                                 </select>
                             </div>
                         </div> 
-                        </br>
+                        <br/>
                         <div class="form-group row">
                             <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Hostel Name<span style="color: red;">*</span></label>
                             <div class="col-md-3">
@@ -435,22 +436,19 @@
                                 </select>
                             </div>
                         </div>
-                        </br>
+                        <br/>
                         <div class="form-group row">
                             <label for="exampleSelect2" class="col-md-2 col-form-label" style="text-align: center;">Room No. Request</label>
                             <div class="col-md-3">
                                 <input class="form-control" type="text" placeholder="123" id="example-text-input">
                             </div>
                         </div> 
-                        </div>
-                        </br>
-                        <hr>
-                        </br> 
+                        </div> 
                 </div>
                 <div id="step-5" class="">
-                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;">Confirmation</h2>
+                    <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Confirmation</h2>
                     <div class="panel panel-default" style="padding: 20px;">
-                        <h3 style="text-align: center;">Decleration</h3>
+                        <h3 style="text-align: center;font-size: 1.5em;">Decleration</h3>
                         I undertake that the information submitted is true to the best of my knowledge and belief. I shall bear
 the consequences if any of them are found to be wrong.
                         <h3 style="text-align: center; padding-top: 20px;">Undertaking by the Student</h3>
@@ -464,6 +462,12 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
         
         </form>
     </div>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy;  IET,Lucknow</span>
+      </div>
+    </footer>
     
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -488,16 +492,11 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
                    $("#prev-btn").removeClass('disabled');
                    $("#next-btn").removeClass('disabled');
                }
-               if(stepNumber == 3){ 
-                    $('.btn-finish').removeClass('disabled');  
-                }else{
-                    $('.btn-finish').addClass('disabled');
-                }
             });
             
             // Toolbar extra buttons
-            var btnFinish = $('<button></button>').text('Finish')
-                                             .addClass('btn btn-info')
+            var btnFinish = $('').text('')
+                                             .addClass('')
                                              .on('click', function(){ 
                                                     if( !$(this).hasClass('disabled')){ 
                                                         var elmForm = $("#myForm");
@@ -515,8 +514,8 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
                                                         }
                                                     }
                                                 });
-            var btnCancel = $('<button></button>').text('Cancel')
-                                             .addClass('btn btn-danger')
+            var btnCancel = $('').text('')
+                                             .addClass('')
                                              .on('click', function(){ $('#smartwizard').smartWizard("reset"); });                         
             
             
