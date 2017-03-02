@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration Form</title>
-    <meta charset="UTF-8">
+    <title>Registration form</title>
+       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Include Bootstrap CSS -->
@@ -21,7 +21,11 @@
 </head>
 <body>
     <div class="container">
-     <div style="display: inline;"><img src="Ietlogo.png" style="float: left;" /><h2 style="text-align: center; padding-top: 10px; padding-bottom: 50px;font-size: 3em; font-family:serif;font-size: 3.5em;"> Registration Form</h2></div>
+     <div style="display: inline;"><img src="Ietlogo.png" style="float: left;" /><h1 style="text-align: center; padding-top: 10px;text-transform: uppercase; padding-bottom: 50px;font-size: 3em; font-family:serif;font-size: 2em;">institute of engineering & technology, lucknow <br/>
+    <small style="text-transform: capitalize;"> (an autonomous constituent institute of dr. A.P.J. Kalam technical university)
+    </small><br/>
+    <span style="text-transform: uppercase; font-size:.8em"> Student provisional registration form&nbsp;(2016-2017)</span></h1>
+    </div>
         <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
         <!-- SmartWizard html -->
         <div id="smartwizard">
@@ -35,11 +39,9 @@
             
             <div>
                 <div id="step-1">
+                <div id="form-step-0" role="form" data-toggle="validator">
                      <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Student Details</h2>
                      <div class="panel panel-default" style="padding: 20px;">
-                   <div id="form-step-0">
-
-                   
                    <h5 style="margin-left: 20px;"><span style="color: red; font-size: 1.5em;">  *</span>-Required Fields</h5>
                 <hr>
                 <br/>
@@ -120,9 +122,11 @@
                 </div>
                 </div>
                 <br/>
+            <div class="row">
+            <div class="col-md-9 col-sm-9">
                 <div class="form-group row">
-                <label for="example-color-input" class="col-md-2 col-form-label" style="text-align: center;">University Roll No.<span style="color: red;">*</span></label>
-                <div class="col-md-5">
+                <label for="example-color-input" class="col-md-3 col-form-label" style="text-align: center;">University Roll No.<span style="color: red;">*</span></label>
+                <div class="col-md-7">
                     <input class="form-control" type="number" placeholder="15052xxxxx" min="1000000000" max="9999999999" id="example-number-input" required>
                     (Except First Semester)
                     <div class="help-block with-errors"></div>
@@ -130,8 +134,8 @@
                 </div>
                 <br/>
                 <div class="form-group row">
-                <label for="example-date-input" class="col-md-2 col-form-label" style="text-align: center;">Date of Birth<span style="color: red;">  *</span></label>
-                <div class="col-md-5">
+                <label for="example-date-input" class="col-md-3 col-form-label" style="text-align: center;">Date of Birth<span style="color: red;">  *</span></label>
+                <div class="col-md-7">
                     <input class="form-control" type="date" placeholder="yyyy-mm-dd" id="example-date-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -139,28 +143,43 @@
                 <br/>
 
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Street Address<span style="color: red;">  *</span></label>
-                <div class="col-md-6">
+                <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">Street Address<span style="color: red;">  *</span></label>
+                <div class="col-md-7">
                     <input class="form-control" type="text" placeholder="Street Address" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <br/>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">State<span style="color: red;">  *</span></label>
-                <div class="col-md-6">
+                <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">State<span style="color: red;">  *</span></label>
+                <div class="col-md-7">
                     <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
                 <br/>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">City<span style="color: red;">  *</span></label>
-                <div class="col-md-6">
+                <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">City<span style="color: red;">  *</span></label>
+                <div class="col-md-7">
                     <input class="form-control" type="text" placeholder="State" id="example-text-input" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 </div>
+            </div>
+            <div class="col-md-3 col-sm-3" style="text-align:center">
+                <div style="margin:auto; border:1px solid black; height:180px; width:150px">
+                </div>
+                
+                <input type="file" id="upload_photo" style="margin-top:7px;">
+                
+                <div style="margin-top:20px;width:210px ;height: 70px; border:1px solid black;margin-right:auto;margin-left:auto;">
+                </div>
+                
+                <input type="file" id="upload_sign" style="margin-top:7px;" />
+                
+
+            </div>
+            </div>
                 <br/>
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-1 col-form-label" style="text-align: center;">Pin<span style="color: red;">  *</span></label>
@@ -180,6 +199,7 @@
                 </div>
                 </div>
                 <div id="step-2" class="">
+                <div id="form-step-1" role="form" data-toggle="validator">
                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Parents Details</h2>
                     <div class="panel panel-default" style="padding: 20px;">
                     <br/>
@@ -316,7 +336,9 @@
                 </div>
                 </div>
                 </div>
+                </div>
                 <div id="step-3" class="">
+                <div id="form-step-2" role="form" data-toggle="validator">
                  <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Other Details</h2>
                  <div class="panel panel-default" style="padding: 20px;">
                  <br/>
@@ -406,7 +428,9 @@
                 </div>
                 </div>
                 </div>
+                </div>
                 <div id="step-4" class="">
+                <div id="form-step-3" role="form" data-toggle="validator">
                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Hostel Request</h2>
                     <div class="panel panel-default" style="padding: 20px;">
                     <br/>
@@ -443,9 +467,11 @@
                                 <input class="form-control" type="text" placeholder="123" id="example-text-input">
                             </div>
                         </div> 
+                        </div>
                         </div> 
                 </div>
                 <div id="step-5" class="">
+                <div id="form-step-4" role="form" data-toggle="validator">
                     <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Confirmation</h2>
                     <div class="panel panel-default" style="padding: 20px;">
                         <h3 style="text-align: center;font-size: 1.5em;">Decleration</h3>
@@ -457,6 +483,7 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
 75% I shall be detained and not allowed to appear for the Term End Examination.
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         
@@ -528,26 +555,6 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
                                       toolbarExtraButtons: [btnFinish, btnCancel]
                                     }
                  });
-                                         
-            
-            // External Button Events
-            $("#reset-btn").on("click", function() {
-                // Reset wizard
-                $('#smartwizard').smartWizard("reset");
-                return true;
-            });
-            
-            $("#prev-btn").on("click", function() {
-                // Navigate previous
-                $('#smartwizard').smartWizard("prev");
-                return true;
-            });
-            
-            $("#next-btn").on("click", function() {
-                // Navigate next
-                $('#smartwizard').smartWizard("next");
-                return true;
-            });
             
             
         });   
