@@ -55,7 +55,7 @@
     </small><br/>
     <span style="text-transform: uppercase; font-size:.8em"> Student provisional registration form&nbsp;(<?php if(date("m"<=6)){ $a = date("Y"); echo $a-1;} else{ echo date("Y"); }  ?>-<?php if(date("m"<=6)){ echo date("Y"); } else{ $a = date("Y"); echo $a+1; } ?>)</span></h1>
     </div>
-        <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
         <div class="panel panel-default" style="padding: 20px;">
             <ul class="nav nav-pills nav-justified">
               <li role="presentation" class="active"><a href="#">Student Details</a></li>
@@ -72,12 +72,14 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name<span style="color: red;">  *</span>&nbsp;  <a href="#" data-toggle="tooltip" data-placement="auto top" title="capital letter name"><i class="fa fa-info-circle" style="font-size:16px;color:red"></i></a> </label>
                 <div class="col-md-5">
+
                     <input class="form-control" type="text" placeholder="Name" id="name" pattern="[A-Z\s]{3,30}" data-error="name can contain only capital letter and spaces">
                      <div class="help-block with-errors"></div>
                 </div>
                 <label for="exampleSelect1" class="col-md-1 col-form-label" style="text-align: center;">Gender<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
-                    <select class="form-control" data-error="select Male or Female">
+                    <select class="form-control" data-error="select Male or Female" name="gender">
+
                     <option value="" disabled selected hidden>Select</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -94,12 +96,11 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name (In Hindi)<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
-                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" placeholder="नाम (
-हिंदी में)">
+                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" name="student-name-hindi" placeholder="नाम (हिंदी में)">
                 </div>
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Year of Admission<span style="color: red;">*</span></label>
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control" name="year">
                     <option value="" disabled selected hidden>Select</option>
                     <option><?php $a = date("Y"); echo $a; ?> </option>
                     <option><?php $a = date("Y"); echo $a-1; ?></option>
@@ -113,7 +114,7 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">DEGREE SOUGHT<span style="color: red;">*</span></label>
                 <div class="col-md-2">
-                    <select class="form-control" id="degree">
+                    <select class="form-control" id="degree" name="degree">
                     <option value="" disabled selected hidden>Select</option>
                     <option>B. TECH</option>
                     <option>M. TECH</option>
@@ -124,7 +125,7 @@
                 </div>
                 <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">COURSE/ BRANCH<span style="color: red;">*</span></label>
                 <div class="col-md-2">
-                    <select class="form-control" id="branch">
+                    <select class="form-control" id="branch" name="branch">
                     <option value="" disabled selected hidden>Select</option>
                     <option>CSE</option>
                     <option>IT</option>
@@ -138,7 +139,7 @@
                 </div>
                 <label for="example-search-input" class="col-md-2 col-form-label" style="text-align: center;">SEMESTER<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
-                    <select class="form-control" id="sem">
+                    <select class="form-control" id="sem" name="semester">
                     <option value="" disabled selected hidden>Select</option>
                     <option>1</option>
                     <option>2</option>
@@ -157,7 +158,7 @@
                 <div class="form-group row">
                 <label for="example-color-input" class="col-md-3 col-form-label" style="text-align: center;">University Roll No.<span style="color: red;">*</span></label>
                 <div class="col-md-7">
-                    <input class="form-control" type="number" placeholder="15052xxxxx">
+                    <input class="form-control" type="number" name="roll-no" placeholder="15052xxxxx">
                     (Except First Semester)
                 </div>
                 </div>
@@ -165,7 +166,7 @@
                 <div class="form-group row">
                 <label for="example-date-input" class="col-md-3 col-form-label" style="text-align: center;">Date of Birth<span style="color: red;">  *</span></label>
                 <div class="col-md-7">
-                    <input class="form-control" type="date" placeholder="yyyy-mm-dd">
+                    <input class="form-control" type="date" name="birth-day" placeholder="yyyy-mm-dd">
                 </div>
                 </div>
                 <br/>
@@ -173,34 +174,32 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">Street Address<span style="color: red;">  *</span></label>
                 <div class="col-md-7">
-                    <input class="form-control" type="text" placeholder="Street Address">
+                    <input class="form-control" type="text" name="street-address" placeholder="Street Address">
                 </div>
                 </div>
                 <br/>
                   <div class="form-group row" id="selection">
                   <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">State<span style="color: red;">  *</span></label>
                   <div class="col-md-7">
-                    <select class="form-control" id="listBox" onchange='selct_district(this.value)'></select>
+                    <select class="form-control" id="listBox" name="state" onchange='selct_district(this.value)'></select>
                   </div>
                   </div>
                   <br/>
                   <div class="form-group row" id="selection">
                   <label for="example-text-input" class="col-md-3 col-form-label" style="text-align: center;">District<span style="color: red;">  *</span></label>
                      <div class="col-md-7">
-                    <select class="form-control" id='secondlist'></select>
+                    <select class="form-control" name="district" id='secondlist'></select>
                     </div>
                   </div>
             </div>
             <div class="col-md-3 col-sm-3" style="text-align:center">
                 <div style="margin:auto; border:1px solid black; height:180px; width:150px">
                 </div>
-                
-                <input type="file" id="upload_photo" style="margin-top:7px;">
+                <input type="file" id="upload_photo" name="profile-photo" style="margin-top:7px;">
                 
                 <div style="margin-top:20px;width:210px ;height: 70px; border:1px solid black;margin-right:auto;margin-left:auto;">
                 </div>
-                
-                <input type="file" id="upload_sign" style="margin-top:7px;" />
+                <input type="file" id="upload_sign" name="signature" style="margin-top:7px;" />
                 
 
             </div>
@@ -209,19 +208,19 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-1 col-form-label" style="text-align: center;">Pin<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
-                    <input class="form-control" type="text" placeholder="123456" pattern="\d{6}">
+                    <input class="form-control" type="text" placeholder="123456" name="pin" pattern="\d{6}">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label" style="text-align: center;">Phone<span style="color: red;">  *</span></label>
                 <div class="col-md-3">
-                    <input class="form-control" type="text" placeholder="9876543210" pattern="\d{10}">
+                    <input class="form-control" type="text" placeholder="9876543210" name="phone" pattern="\d{10}">
                 </div>
                 <label for="example-search-input" class="col-md-1 col-form-label" style="text-align: center;">E-mail<span style="color: red;">  *</span></label>
                 <div class="col-md-4">
-                    <input class="form-control" type="email" placeholder="email@abc.com">
+                    <input class="form-control" type="email" name="email" placeholder="email@abc.com">
                 </div>
                 </div>
                 </div>
-                <a href="step-2.php"><button type="button" class="btn btn-primary btn-md pull-right">Next Step</button></a>
+                <button type="submit" name = "submit" class="btn btn-primary btn-md pull-right">Next Step</button>
                </form>
     </div>
     <!--footer-->
@@ -241,3 +240,65 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+<?php
+$studentName=$gender="";
+$studentNameHindi=$year=$degree=$branch=$semester=$rollNo=$birthDay=$streetAddress="";
+$state=$district=$profilePhoto=$signature=$pin=$phone=$email="";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$studentName=trim($_POST['student-name']);
+$gender=$_POST['gender'];
+$studentNameHindi=trim($_POST['student-name-hindi']);
+$year=$_POST['year'];
+$degree=$_POST['degree'];
+$branch=$_POST['branch'];
+$semester=$_POST['semester'];
+$rollNo=trim($_POST['roll-no']);
+$birthDay=$_POST['birth-day'];
+$streetAddress=trim($_POST['street-address']);
+$state=$_POST['state'];
+$district=$_POST['district'];
+$profilePhoto=$_POST['profile-photo'];
+$signature=$_POST['signature'];
+$pin=trim($_POST['pin']);
+$phone=trim($_POST['phone']);
+$email=trim($_POST['email']);
+
+if (!get_magic_quotes_gpc()) {
+
+$studentName= addslashes($studentName);
+$gender= addslashes($gender);
+$studentNameHindi= addslashes($studentNameHindi);
+$year= addslashes($year);
+$degree= addslashes($degree);
+$branch= addslashes($branch);
+$semester= addslashes($semester);
+$rollNo= addslashes($rollNo);
+$birthDay= addslashes($birthDay);
+$streetAddress= addslashes($streetAddress);
+$state= addslashes($state);
+$district= addslashes($district);
+$profilePhoto= addslashes($profilePhoto);
+$signature= addslashes($signature);
+$pin= addslashes($pin);
+$phone= addslashes($phone);
+$email= addslashes($email);
+
+}
+
+@ $db = new mysqli('localhost', 'root', '', 'form');
+if (mysqli_connect_errno()) {
+exit;
+}
+
+$query = "insert into student values
+('".$rollNo."', '".$studentName."', '".$gender."', '".$studentNameHindi."', '".$year."' , '".$degree."' , '".$semester."' , '".$birthDay."' , '".$streetAddress."' , '".$state."' , '".$district."' , '".$profilePhoto."' , '".$signature."' , '".$pin."' , '".$phone."' , '".$email."')";
+$result = $db->query($query);
+if($result)
+{
+    header('Location: http://localhost/form/step-2.php');
+    exit;
+}
+}
+?>
+
