@@ -61,8 +61,7 @@
                 <div class="form-group row">
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name (In Hindi)<span style="color: red;">  *</span></label>
                 <div class="col-md-5">
-                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" name="student-name-hindi" placeholder="नाम (
-हिंदी में)">
+                    <input class="form-control" style="font-family: 'Noto Sans', sans-serif;" type="text" name="student-name-hindi" placeholder="नाम (हिंदी में)">
                 </div>
                 <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Year of Admission<span style="color: red;">*</span></label>
                 <div class="col-md-2">
@@ -161,12 +160,10 @@
             <div class="col-md-3 col-sm-3" style="text-align:center">
                 <div style="margin:auto; border:1px solid black; height:180px; width:150px">
                 </div>
-                
                 <input type="file" id="upload_photo" name="profile-photo" style="margin-top:7px;">
                 
                 <div style="margin-top:20px;width:210px ;height: 70px; border:1px solid black;margin-right:auto;margin-left:auto;">
                 </div>
-                
                 <input type="file" id="upload_sign" name="signature" style="margin-top:7px;" />
                 
 
@@ -265,3 +262,4 @@ if($result)
 }
 }
 ?>
+
