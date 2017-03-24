@@ -13,9 +13,6 @@
 
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
 
-    <!--district-state-select-jquery-->
-    <script language="Javascript" src="js/jquery.js"></script>
-    <script type="text/JavaScript" src='js/state.js'></script>
 </head>
 <body>
     <div class="container">
@@ -37,15 +34,23 @@
                 <h2 style="text-align: center;padding-top: 20px; padding-bottom: 20px; font-family: serif;font-size: 2.5em;">Confirmation</h2>
                     <div class="panel panel-default" style="padding: 20px;">
                         <h3 style="text-align: center;font-size: 1.5em;">Decleration</h3>
-                        I undertake that the information submitted is true to the best of my knowledge and belief. I shall bear
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="decleration" value="yes">I undertake that the information submitted is true to the best of my knowledge and belief. I shall bear
 the consequences if any of them are found to be wrong.
+                            </label>
+                        </div>
                         <h3 style="text-align: center; padding-top: 20px;">Undertaking by the Student</h3>
-                         I will attend all the classes from the opening day of the Institute and I will be regular
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="undertaking" value="yes">I will attend all the classes from the opening day of the Institute and I will be regular
 and punctual to all the classes i.e (Theory/Practical) and i am aware that if I don’t secure attendance more than
 75% I shall be detained and not allowed to appear for the Term End Examination.
+                            </label>
+                        </div>
                     </div>
                 <a href="step-3.php"><button type="button" class="btn btn-primary btn-md">Previous Step</button></a>
-                <div style="text-align: center;"><button type="button" class="btn btn-primary btn-md">Submit</button></div>
+                <div style="text-align: center;"><button type="submit" class="btn btn-primary btn-md">Submit</button></div>
                </form>
     </div>
     <!--footer-->
