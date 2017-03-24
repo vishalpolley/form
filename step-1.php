@@ -239,6 +239,7 @@
                </form>
     </div>
     <!--footer-->
+    <br/>
     <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy;  IET,Lucknow</span>

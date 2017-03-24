@@ -239,6 +239,7 @@ in action or defence personnel posted in U.P./defence personnel domicile of U.P.
                </form>
     </div>
     <!--footer-->
+    <br/>
     <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy;  IET,Lucknow</span>

@@ -49,6 +49,7 @@ and punctual to all the classes i.e (Theory/Practical) and i am aware that if I 
                </form>
     </div>
     <!--footer-->
+    <br/>
     <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy;  IET,Lucknow</span>
