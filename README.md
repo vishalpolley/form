@@ -1,5 +1,5 @@
 # form
-<b style="color:green">An Erp Modal</b><br/>
+<b color="red">An ERP Modal</b><br/>
 A well validated form for registration.<br/>
 good use of javascript and html5 validation.<br/>
 Contains Php File<br/><br/>
