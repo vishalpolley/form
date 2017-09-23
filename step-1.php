@@ -14,8 +14,39 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
 
     <!--district-state-select-jquery-->
-    <script language="Javascript" src="js/jquery.js"></script>
+    <!--script language="Javascript" src="js/jquery.js"></script-->
     <script type="text/JavaScript" src='js/state.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({delay: {show: 5, hide: 1200}});
+        });   
+    </script>
+            
+    <style>
+  .tooltip-inner {
+    background-color: #00acd6;
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #00acd6;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #00acd6;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #00acd6;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+   </style>
 </head>
 <body>
     <div class="container">
@@ -39,17 +70,21 @@
                 <hr>
                 <br/>
                 <div class="form-group row">
-                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name<span style="color: red;">  *</span></label>
+                <label for="example-text-input" class="col-md-2 col-form-label" style="text-align: center;">Student's Name<span style="color: red;">  *</span>&nbsp;  <a href="#" data-toggle="tooltip" data-placement="auto top" title="capital letter name"><i class="fa fa-info-circle" style="font-size:16px;color:red"></i></a> </label>
                 <div class="col-md-5">
-                    <input class="form-control" type="text" placeholder="Name" id="name" name="student-name" pattern="[A-Z]{3,.}">
+
+                    <input class="form-control" type="text" placeholder="Name" id="name" pattern="[A-Z\s]{3,30}" data-error="name can contain only capital letter and spaces">
+                     <div class="help-block with-errors"></div>
                 </div>
                 <label for="exampleSelect1" class="col-md-1 col-form-label" style="text-align: center;">Gender<span style="color: red;">  *</span></label>
                 <div class="col-md-2">
-                    <select class="form-control" name="gender">
+                    <select class="form-control" data-error="select Male or Female" name="gender">
+
                     <option value="" disabled selected hidden>Select</option>
                     <option>Male</option>
                     <option>Female</option>
                     </select>
+                    <div class="help-block with-errors"></div>
                 </div>     
                 </div>
 
@@ -197,6 +232,10 @@
     
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- validater-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>
