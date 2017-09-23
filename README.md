@@ -1,7 +1,7 @@
 # form
+<b>An Erp Modal</b>
+A well validated form for registration.<br/>
+good use of javascript and html5 validation.<br/>
+Contains Php File<br/><br/>
 
-A well validated form for registration.
-good use of javascript and html5 validation.
-Ajax also has to be implemented.
-
-Demo https://raghsgit.github.io/form/
+Demo at https://raghsgit.github.io/WebSite.form/
